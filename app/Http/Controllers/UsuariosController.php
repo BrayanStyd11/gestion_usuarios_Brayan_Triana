@@ -22,6 +22,9 @@ class UsuariosController extends Controller
      */
     public function store(Request $request)
     {
+        /**
+         * Creación de try Catch para evitar mostrar vistas por defecto del error
+         */
         try {
             $user = new Usuarios();
             $user->create($request->all());
