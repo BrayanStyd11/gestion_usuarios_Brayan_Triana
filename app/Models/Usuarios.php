@@ -9,6 +9,9 @@ class Usuarios extends Model
 {
     use HasFactory;
 
+    /**
+     * Se deshabilita el timestaps para evitar errores de crud
+     */
     public $timestamps = false;
 
     protected $table = 'usuarios';
